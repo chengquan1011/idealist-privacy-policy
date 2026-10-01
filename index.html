@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f7f6f2" />
+    <meta
+      name="description"
+      content="Privacy Policy for Idealist, in English and Simplified Chinese."
+    />
+    <title>Idealist Privacy Policy</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        color: #282a28;
+        background: #f7f6f2;
+        font-synthesis: none;
+        text-rendering: optimizeLegibility;
+        --muted: #6c716d;
+        --line: #e5e3dc;
+        --accent: #167e72;
+        --card: #fff;
+      }
+
+      * { box-sizing: border-box; }
+      body { margin: 0; min-width: 320px; line-height: 1.65; }
+      header { padding: 46px 22px 26px; text-align: center; }
+      .brand { margin: 0 0 4px; color: var(--accent); font-size: 14px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+      h1 { margin: 0; font-size: clamp(30px, 6vw, 42px); letter-spacing: -.035em; line-height: 1.2; }
+      .subtitle { margin: 10px auto 20px; color: var(--muted); }
+      .language-switch { display: inline-flex; gap: 4px; padding: 4px; border: 1px solid var(--line); border-radius: 999px; background: #fff; }
+      .language-switch button { min-width: 96px; border: 0; border-radius: 999px; padding: 9px 15px; background: transparent; color: #525753; font: inherit; font-size: 14px; cursor: pointer; }
+      .language-switch button[aria-pressed="true"] { background: #e5f3ef; color: #12685e; font-weight: 650; }
+      main { width: min(820px, calc(100% - 32px)); margin: 0 auto 56px; }
+      .notice { margin: 0 0 16px; padding: 15px 18px; border: 1px solid #efdbab; border-radius: 14px; background: #fff8e7; color: #554527; }
+      article { padding: clamp(22px, 5vw, 40px); border: 1px solid var(--line); border-radius: 22px; background: var(--card); box-shadow: 0 8px 28px rgb(36 39 34 / 4%); }
+      .effective { margin: 0 0 26px; color: var(--muted); font-size: 14px; }
+      h2 { margin: 30px 0 9px; font-size: 20px; line-height: 1.35; }
+      h2:first-of-type { margin-top: 0; }
+      h3 { margin: 17px 0 5px; font-size: 16px; }
+      p { margin: 8px 0 12px; }
+      ul { margin: 7px 0 14px; padding-left: 23px; }
+      li { margin: 5px 0; }
+      a { color: #116c63; text-decoration-thickness: 1px; text-underline-offset: 3px; overflow-wrap: anywhere; }
+      .historical { padding: 14px 16px; border-left: 3px solid #db9d28; border-radius: 5px 12px 12px 5px; background: #fff9ec; }
+      footer { padding: 0 16px 34px; text-align: center; color: var(--muted); font-size: 13px; }
+      .language-panel { display: none; }
+      body[data-language="en"] #en-content,
+      body[data-language="zh"] #zh-content { display: block; }
+      @media (max-width: 520px) {
+        header { padding-top: 34px; }
+        main { width: min(100% - 20px, 820px); }
+        article { border-radius: 17px; }
+        .notice { border-radius: 12px; }
+      }
+      @media print {
+        body { background: #fff; }
+        header { padding-top: 12px; }
+        article { box-shadow: none; }
+        .language-switch { display: none; }
+        body[data-language="en"] #en-content { display: block; }
+      }
+    </style>
+  </head>
+  <body data-language="en">
+    <header>
+      <p class="brand">Idealist</p>
+      <h1 id="page-title">Privacy Policy</h1>
+      <p class="subtitle" id="page-subtitle">How we collect, use, and protect information.</p>
+      <div class="language-switch" role="group" aria-label="Choose language">
+        <button type="button" data-language-button="en" aria-pressed="true">English</button>
+        <button type="button" data-language-button="zh" aria-pressed="false">简体中文</button>
+      </div>
+    </header>
+
+    <main>
+      <aside class="notice language-panel" id="en-notice">
+        This policy describes the app as it currently works. Some items shown in feature-plan artwork—including AI image generation, voice recording, investment, and payments—are roadmap concepts, not active Idealist features as of the effective date below.
+      </aside>
+      <aside class="notice language-panel" id="zh-notice">
+        本政策说明的是应用目前实际提供的功能。功能计划图片中展示的部分内容（包括 AI 生图、语音录制、投资和支付）截至下方生效日期仍只是规划概念，并非 Idealist 当前已启用的功能。
+      </aside>
+
+      <article>
+        <section class="language-panel" id="en-content" lang="en">
+          <p class="effective"><strong>Effective date:</strong> October 1, 2026</p>
+          <p>This Privacy Policy explains how Quan Cheng (“we”) handles information when you use the Idealist mobile app and related email-link and policy pages (together, the “Service”). Idealist is currently provided without commercial or advertising purposes.</p>
+
+          <h2>1. Information we handle</h2>
+          <h3>Account information</h3>
+          <p>When you create an account or sign in, we process your email address and authentication credentials through Supabase Auth. Supabase manages the account password for authentication; we do not use it for advertising. Your Idealist profile may include your display name, username/handle, optional headline, and avatar.</p>
+
+          <h3>Content you provide</h3>
+          <p>We store the titles, descriptions, links, categories, and images you submit as original ideas, discoveries, or research, including drafts. If you send a suggestion or contact support, we process the message and the account details needed to respond.</p>
+          <ul>
+            <li><strong>Drafts:</strong> draft posts and their media are restricted to the account that owns them.</li>
+            <li><strong>Published content:</strong> published posts and the public profile fields listed above are visible to other Idealist users. Published post images are delivered through time-limited signed links (currently one hour); anyone who obtains an unexpired link may be able to view that image. People may also save, screenshot, or share content they can see.</li>
+            <li><strong>Avatars:</strong> profile avatars are stored in a public image bucket because they are displayed on public profiles.</li>
+          </ul>
+
+          <h3>Interactions and guest use</h3>
+          <p>We process favorites, likes or other reactions, firewood interactions, and post-view counts to operate the corresponding features. If you interact without signing in, the app creates a random, persistent viewer identifier on your device and uses it to associate guest interactions; it is not an advertising ID.</p>
+
+          <h3>Device and local app data</h3>
+          <p>The app stores session information, language preference, recent sign-in email addresses, and a viewer identifier on your device. Images may also be cached locally to display them more smoothly. The sign-in screen currently offers “Remember Password” and has it selected by default. When enabled, remembered credentials and session values use iOS secure storage when available; if secure storage is unavailable, the app falls back to files in its private app storage. That fallback is not equivalent to Keychain protection. You can turn off “Remember Password,” and should do so on a shared or untrusted device.</p>
+          <p>The app does not request precise location or access contacts. When you choose a photo or use the camera, the selected image is used for the profile or post you are editing.</p>
+
+          <h3>Technical and service data</h3>
+          <p>Our infrastructure providers may receive IP address, request time, app/operating-system and runtime details, error or security logs, and other technical information needed to deliver, secure, and troubleshoot the Service. When the app checks for over-the-air updates, Expo says it may receive the device operating system and randomized update tokens; its services may also process network and diagnostic data under its own policy. We do not currently integrate an in-app advertising or third-party analytics SDK.</p>
+
+          <h2>2. How we use information</h2>
+          <ul>
+            <li>Create and secure accounts; verify email addresses; sign users in; and send requested password-reset or account emails.</li>
+            <li>Store drafts, publish content, display profiles and feeds, and provide favorites, reactions, firewood, and view counts.</li>
+            <li>Respond to user questions and suggestions, maintain the Service, investigate abuse or security issues, and fix errors.</li>
+            <li>Meet legal obligations and protect the rights, safety, and security of users and the Service.</li>
+          </ul>
+          <p>We do not sell personal information, use it for targeted advertising, or use it to build advertising profiles. Idealist currently does not provide AI generation, voice recording/transcription, investment, recharge, or payment features; we therefore do not collect voice recordings or payment-card details through those roadmap concepts.</p>
+
+          <h2>3. When information is shared</h2>
+          <p>We share information only as needed to run the Service, at your direction (for example, when you publish content), or as required by law:</p>
+          <ul>
+            <li><strong>Supabase</strong> provides authentication, database, storage, and server functions.</li>
+            <li><strong>Resend</strong> delivers transactional account emails, such as confirmation and password-reset messages. It receives the recipient email address and the information needed to deliver the requested email.</li>
+            <li><strong>Expo / EAS</strong> delivers app updates and related technical services.</li>
+            <li><strong>GitHub Pages</strong> hosts the privacy and email-callback pages. When you open an email link, the browser may contact GitHub Pages and Supabase with link parameters needed to complete the callback. The static pages are not intended to run advertising or analytics; GitHub may process ordinary web-request information under its own policies.</li>
+            <li><strong>Apple</strong> provides the iOS operating system and App Store distribution and may process information under Apple’s own policies.</li>
+          </ul>
+          <p>These providers process information under their own terms and privacy notices. They may use infrastructure in countries other than yours. Provider notices: <a href="https://supabase.com/privacy" rel="noopener noreferrer">Supabase</a>, <a href="https://resend.com/legal/privacy-policy" rel="noopener noreferrer">Resend</a>, <a href="https://expo.dev/privacy" rel="noopener noreferrer">Expo</a>, <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement" rel="noopener noreferrer">GitHub</a>, and <a href="https://www.apple.com/legal/privacy/" rel="noopener noreferrer">Apple</a>.</p>
+
+          <h2>4. Public content and security</h2>
+          <p>Think carefully before publishing personal information. Other users may copy or redistribute public content. Draft post media is private and is not served through permanent public links. Published post media is stored in a private bucket and served using signed, time-limited links. No internet service can guarantee absolute security, and a person who receives a signed link can use it until it expires.</p>
+
+          <h2>5. Retention and deletion</h2>
+          <p>We keep information while needed to provide the Service, maintain an account and its content, address security issues, or meet legal obligations. You may delete eligible posts in the app. To request account and associated-data deletion, email <a href="mailto:bill-labs@outlook.com">bill-labs@outlook.com</a> from the account email address. We may ask you to verify ownership. We will delete or de-identify information we can reasonably identify and remove, subject to legal, security, dispute-resolution, and backup-retention needs. Copies already downloaded, screenshotted, or retained by other users or service-provider backups may not be immediately removable. At present, account deletion must be requested by email; it is not yet available as an in-app control.</p>
+
+          <h2>6. Your choices and privacy rights</h2>
+          <p>You can edit profile details, choose whether to publish content, remove eligible posts, and disable “Remember Password.” Depending on where you live, you may have rights to request access, correction, deletion, restriction, or a copy of your personal information, or to object to certain processing. Contact us below; we may verify your identity and will respond as required by applicable law.</p>
+
+          <h2>7. Children</h2>
+          <p>Idealist is not directed to children under 13, and we do not knowingly collect their personal information. If you believe a child has provided information, contact us so we can review and remove it where appropriate.</p>
+
+          <h2>8. International processing</h2>
+          <p>Our providers may process or store information in countries where they or their infrastructure operate, which may have data-protection laws different from those in your country. Where required, we rely on appropriate safeguards for international transfers.</p>
+
+          <h2>9. Changes and contact</h2>
+          <p>We may update this policy as the app changes or as required by law. We will revise the effective date and provide a notice where appropriate. Questions, rights requests, and deletion requests can be sent to <a href="mailto:bill-labs@outlook.com">bill-labs@outlook.com</a>.</p>
+          <p><strong>Operator:</strong> Quan Cheng<br /><strong>Contact:</strong> <a href="mailto:bill-labs@outlook.com">bill-labs@outlook.com</a></p>
+
+          <h2>Historical access notice</h2>
+          <p class="historical">Before October 1, 2026, a database permission could allow email addresses stored in profile records to be retrieved through the public profile API. On October 1, 2026, we removed public and ordinary authenticated access to that profile email field; email addresses are no longer returned by the profile API. We have not determined whether anyone accessed or retained profile email data before the permission was changed. If you have questions, contact us at <a href="mailto:bill-labs@outlook.com">bill-labs@outlook.com</a>.</p>
+
+          <h2>Previously public post-image links</h2>
+          <p class="historical">On October 1, 2026, we changed post-image storage so drafts are private and published images require expiring signed links. Existing public links are now denied by the storage access policy. We cannot recall copies downloaded or shared before that change, and copies retained in third-party caches may remain available until those caches expire.</p>
+        </section>
+
+        <section class="language-panel" id="zh-content" lang="zh-Hans">
+          <p class="effective"><strong>生效日期：</strong>2026 年 10 月 1 日</p>
+          <p>本隐私政策说明 Quan Cheng（“我们”）在你使用 Idealist 移动应用及相关邮件链接页面和隐私政策页面（统称“服务”）时如何处理信息。目前提供 Idealist 并非出于商业或广告目的。</p>
+
+          <h2>1. 我们处理的信息</h2>
+          <h3>账号信息</h3>
+          <p>创建账号或登录时，我们通过 Supabase Auth 处理你的邮箱地址和身份验证凭证。Supabase 管理用于身份验证的账号密码；我们不会将其用于广告。Idealist 个人资料可能包括昵称、用户名/账号名、可选的个人简介和头像。</p>
+
+          <h3>你提供的内容</h3>
+          <p>我们会存储你作为原创、见闻或研究内容提交的标题、描述、链接、分类和图片，也包括草稿。你提交建议或联系支持时，我们会处理消息内容以及回复所需的账号信息。</p>
+          <ul>
+            <li><strong>草稿：</strong>草稿及其媒体文件仅允许所属账号访问。</li>
+            <li><strong>已发布内容：</strong>已发布帖子以及上文列出的公开个人资料字段会展示给其他 Idealist 用户。已发布帖子的图片通过限时签名链接提供（目前有效期为一小时）；获得未过期链接的人可能能够查看图片。其他人也可能保存、截图或分享其可见内容。</li>
+            <li><strong>头像：</strong>个人资料头像存放于公开图片存储空间，因为头像会显示在公开个人资料中。</li>
+          </ul>
+
+          <h3>互动和游客使用</h3>
+          <p>为提供相应功能，我们会处理收藏、点赞或其他互动、拾柴互动以及帖子浏览计数。未登录时，应用会在设备上生成一个随机且持久的访客标识，用来关联游客互动；它不是广告标识符。</p>
+
+          <h3>设备和应用本地数据</h3>
+          <p>应用会在设备本地保存会话信息、语言偏好、最近登录使用的邮箱地址和访客标识。为减少图片闪烁，图片也可能缓存在本地。登录页目前提供“记住密码”选项，且默认选中。启用时，记住的凭据和会话信息会在可用时使用 iOS 安全存储；若安全存储不可用，应用会回退到应用私有目录中的文件。此回退方式不等同于 iOS 钥匙串保护。你可以关闭“记住密码”；在共享或不可信设备上应关闭此选项。</p>
+          <p>应用不会请求精确位置或访问通讯录。当你选择照片或使用相机时，所选图片会用于你正在编辑的个人资料或帖子。</p>
+
+          <h3>技术和服务数据</h3>
+          <p>我们的基础设施服务商可能会收到提供、保护和排查服务所需的 IP 地址、请求时间、应用/操作系统及运行环境信息、错误或安全日志等技术信息。应用检查无线更新时，Expo 表示可能会收到设备操作系统信息和随机生成的更新令牌；其服务也可能根据自己的政策处理网络和诊断数据。目前应用未集成应用内广告或第三方分析 SDK。</p>
+
+          <h2>2. 我们如何使用信息</h2>
+          <ul>
+            <li>创建并保护账号、验证邮箱、登录用户，以及发送用户主动请求的密码重置或账号邮件。</li>
+            <li>保存草稿、发布内容、展示个人资料和信息流，并提供收藏、互动、拾柴和浏览计数功能。</li>
+            <li>回复问题和建议、维护服务、调查滥用或安全问题并修复错误。</li>
+            <li>遵守法律义务，保护用户和服务的权利、安全与稳定。</li>
+          </ul>
+          <p>我们不会出售个人信息、将其用于定向广告或建立广告画像。截至目前，Idealist 尚未提供 AI 生图、语音录制/转写、投资、充值或支付功能，因此不会通过这些规划概念收集语音录音或银行卡信息。</p>
+
+          <h2>3. 信息何时会共享</h2>
+          <p>我们仅在运营服务、按你的指示（例如发布内容）或法律要求时共享信息：</p>
+          <ul>
+            <li><strong>Supabase：</strong>提供身份验证、数据库、文件存储和服务端函数。</li>
+            <li><strong>Resend：</strong>发送账号确认和密码重置等事务性邮件。它会收到收件人邮箱及发送所需的信息。</li>
+            <li><strong>Expo / EAS：</strong>提供应用更新及相关技术服务。</li>
+            <li><strong>GitHub Pages：</strong>托管隐私政策和邮件回调页面。打开邮件链接时，浏览器可能会向 GitHub Pages 和 Supabase 发送完成回调所需的链接参数。静态页面不用于广告或分析；GitHub 可能依据自身政策处理普通网页请求信息。</li>
+            <li><strong>Apple：</strong>提供 iOS 操作系统和 App Store 分发服务，并可能依据 Apple 自身政策处理信息。</li>
+          </ul>
+          <p>这些服务商根据各自条款和隐私声明处理信息，也可能在你所在国家/地区以外使用基础设施。服务商隐私声明：<a href="https://supabase.com/privacy" rel="noopener noreferrer">Supabase</a>、<a href="https://resend.com/legal/privacy-policy" rel="noopener noreferrer">Resend</a>、<a href="https://expo.dev/privacy" rel="noopener noreferrer">Expo</a>、<a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement" rel="noopener noreferrer">GitHub</a> 和 <a href="https://www.apple.com/legal/privacy/" rel="noopener noreferrer">Apple</a>。</p>
+
+          <h2>4. 公开内容和安全</h2>
+          <p>发布个人信息前请仔细考虑。其他用户可能复制或转发公开内容。草稿媒体为私有，不通过永久公开链接提供。已发布帖子图片存储在私有空间，并通过限时签名链接访问。任何互联网服务都无法保证绝对安全；获得签名链接的人可在链接过期前使用它。</p>
+
+          <h2>5. 保存期限和删除</h2>
+          <p>我们会在提供服务、维护账号及其内容、处理安全问题或履行法律义务所需期间保存信息。你可以在应用内删除符合条件的帖子。若要申请删除账号及相关数据，请使用账号邮箱联系 <a href="mailto:bill-labs@outlook.com">bill-labs@outlook.com</a>。我们可能要求验证账号归属。除法律、安全、争议处理及备份保留需要外，我们会删除或去标识化可合理识别并删除的信息。其他用户已下载或截图的副本、以及服务商备份中的副本，可能无法立即删除。目前账号删除需通过邮件申请，应用内尚无删除账号入口。</p>
+
+          <h2>6. 你的选择和隐私权利</h2>
+          <p>你可以编辑个人资料、决定是否发布内容、删除符合条件的帖子，并关闭“记住密码”。根据你所在地区的法律，你可能有权请求访问、更正、删除或限制处理个人信息、获取副本，或反对某些处理。请通过下方邮箱联系我们；我们可能会验证身份，并依适用法律回复。</p>
+
+          <h2>7. 儿童</h2>
+          <p>Idealist 并非面向 13 岁以下儿童，我们不会故意收集其个人信息。如你认为儿童向我们提供了信息，请联系我们，以便在适当情况下核查并删除。</p>
+
+          <h2>8. 跨境处理</h2>
+          <p>我们的服务商可能在其运营或基础设施所在的国家/地区处理或存储信息，这些地区的数据保护法律可能与你所在地区不同。在法律要求时，我们会为跨境传输采用适当保障措施。</p>
+
+          <h2>9. 政策变更和联系方式</h2>
+          <p>我们可能会根据应用变化或法律要求更新本政策。更新时会修改生效日期，并在适当情况下进行提示。如有问题，或需提出权利请求、删除请求，请联系 <a href="mailto:bill-labs@outlook.com">bill-labs@outlook.com</a>。</p>
+          <p><strong>运营方：</strong>Quan Cheng<br /><strong>联系邮箱：</strong><a href="mailto:bill-labs@outlook.com">bill-labs@outlook.com</a></p>
+
+          <h2>历史访问说明</h2>
+          <p class="historical">2026 年 10 月 1 日之前，数据库权限可能使个人资料记录中的邮箱地址可通过公开资料 API 获取。2026 年 10 月 1 日，我们已移除公开用户及普通登录用户对该资料邮箱字段的访问权限；资料 API 目前不会返回邮箱地址。我们尚未确认权限变更前是否有人访问或留存过资料邮箱数据。如有疑问，请联系 <a href="mailto:bill-labs@outlook.com">bill-labs@outlook.com</a>。</p>
+
+          <h2>此前公开的帖子图片链接</h2>
+          <p class="historical">2026 年 10 月 1 日，我们调整了帖子图片存储方式：草稿图片改为私有，已发布图片需要使用会过期的签名链接。旧的公开链接现在已被存储访问策略拒绝。我们无法收回变更前已下载或分享的副本；第三方缓存中的副本可能要等缓存过期后才会消失。</p>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <span class="language-panel" id="en-footer">Idealist · Privacy Policy · Effective October 1, 2026</span>
+      <span class="language-panel" id="zh-footer">Idealist · 隐私政策 · 生效日期：2026 年 10 月 1 日</span>
+    </footer>
+    <script>
+      (() => {
+        const isChinese = /^zh(?:-|$)/i.test(navigator.language || "");
+        const initialLanguage = isChinese ? "zh" : "en";
+        const applyLanguage = (language) => {
+          const isZh = language === "zh";
+          document.body.dataset.language = isZh ? "zh" : "en";
+          document.documentElement.lang = isZh ? "zh-Hans" : "en";
+          document.getElementById("page-title").textContent = isZh ? "隐私政策" : "Privacy Policy";
+          document.getElementById("page-subtitle").textContent = isZh
+            ? "了解我们如何收集、使用和保护信息。"
+            : "How we collect, use, and protect information.";
+          document.querySelectorAll("[data-language-button]").forEach((button) => {
+            button.setAttribute("aria-pressed", String(button.dataset.languageButton === language));
+          });
+        };
+        document.querySelectorAll("[data-language-button]").forEach((button) => {
+          button.addEventListener("click", () => applyLanguage(button.dataset.languageButton));
+        });
+        applyLanguage(initialLanguage);
+      })();
+    </script>
+  </body>
+</html>
