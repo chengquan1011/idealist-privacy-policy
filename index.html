@@ -47,7 +47,11 @@
       footer { padding: 0 16px 34px; text-align: center; color: var(--muted); font-size: 13px; }
       .language-panel { display: none; }
       body[data-language="en"] #en-content,
-      body[data-language="zh"] #zh-content { display: block; }
+      body[data-language="en"] #en-notice,
+      body[data-language="en"] #en-footer,
+      body[data-language="zh"] #zh-content,
+      body[data-language="zh"] #zh-notice,
+      body[data-language="zh"] #zh-footer { display: block; }
       @media (max-width: 520px) {
         header { padding-top: 34px; }
         main { width: min(100% - 20px, 820px); }
