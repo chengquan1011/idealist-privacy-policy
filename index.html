@@ -88,7 +88,7 @@
 
       <article>
         <section class="language-panel" id="en-content" lang="en">
-          <p class="effective"><strong>Effective date:</strong> October 1, 2026</p>
+          <p class="effective"><strong>Effective date:</strong> October 15, 2026</p>
           <p>This Privacy Policy explains how Quan Cheng (“we”) handles information when you use the Idealist mobile app and related email-link and policy pages (together, the “Service”). Idealist is currently provided without commercial or advertising purposes.</p>
 
           <h2>1. Information we handle</h2>
@@ -106,6 +106,12 @@
           <h3>Interactions and guest use</h3>
           <p>We process favorites, likes or other reactions, firewood interactions, and post-view counts to operate the corresponding features. If you interact without signing in, the app creates a random, persistent viewer identifier on your device and uses it to associate guest interactions; it is not an advertising ID.</p>
 
+          <h3>Reports, blocking, and moderation</h3>
+          <p>When you report a post or author, we process the selected reason, the reported post or account identifier, and the report’s review status so the administrator can investigate. Report counts may help prioritize the manual review queue; reports do not automatically hide content. If you block an author, we store that blocking relationship to filter their content from your feeds and favorites. We also store system notices shown in the app, such as warnings, content-removal notices, or publishing restrictions, and whether you have read them.</p>
+
+          <h3>Automated content screening</h3>
+          <p>Before an Original or Discovery post is published, its title, text, and attached images are screened using OpenAI’s Moderation API. OpenAI returns moderation categories and scores. Content flagged for review stays private and is not published unless the administrator approves it. We store the screening outcome and category signals in a restricted moderation record. Research posts added by the administrator are not part of this user-submission screening flow.</p>
+
           <h3>Device and local app data</h3>
           <p>The app stores session information, language preference, recent sign-in email addresses, and a viewer identifier on your device. Images may also be cached locally to display them more smoothly. The sign-in screen currently offers “Remember Password” and has it selected by default. When enabled, remembered credentials and session values use iOS secure storage when available; if secure storage is unavailable, the app falls back to files in its private app storage. That fallback is not equivalent to Keychain protection. You can turn off “Remember Password,” and should do so on a shared or untrusted device.</p>
           <p>The app does not request precise location or access contacts. When you choose a photo or use the camera, the selected image is used for the profile or post you are editing.</p>
@@ -117,6 +123,7 @@
           <ul>
             <li>Create and secure accounts; verify email addresses; sign users in; and send requested password-reset or account emails.</li>
             <li>Store drafts, publish content, display profiles and feeds, and provide favorites, reactions, firewood, and view counts.</li>
+            <li>Screen submitted Original and Discovery content for safety, prioritize reports for manual review, and administer warnings, content decisions, or publishing restrictions.</li>
             <li>Respond to user questions and suggestions, maintain the Service, investigate abuse or security issues, and fix errors.</li>
             <li>Meet legal obligations and protect the rights, safety, and security of users and the Service.</li>
           </ul>
@@ -127,17 +134,18 @@
           <ul>
             <li><strong>Supabase</strong> provides authentication, database, storage, and server functions.</li>
             <li><strong>Resend</strong> delivers transactional account emails, such as confirmation and password-reset messages. It receives the recipient email address and the information needed to deliver the requested email.</li>
+            <li><strong>OpenAI</strong> processes the title, text, and images of Original and Discovery submissions through its Moderation API for safety screening. OpenAI says API data is not used to train or improve its models unless the customer opts in; its abuse-monitoring logs may retain API inputs, outputs, and related metadata for up to 30 days, unless a longer period is required by law or reasonably necessary to protect its services or others. See <a href="https://developers.openai.com/api/docs/guides/your-data" rel="noopener noreferrer">OpenAI API data controls</a>.</li>
             <li><strong>Expo / EAS</strong> delivers app updates and related technical services.</li>
             <li><strong>GitHub Pages</strong> hosts the privacy and email-callback pages. When you open an email link, the browser may contact GitHub Pages and Supabase with link parameters needed to complete the callback. The static pages are not intended to run advertising or analytics; GitHub may process ordinary web-request information under its own policies.</li>
             <li><strong>Apple</strong> provides the iOS operating system and App Store distribution and may process information under Apple’s own policies.</li>
           </ul>
-          <p>These providers process information under their own terms and privacy notices. They may use infrastructure in countries other than yours. Provider notices: <a href="https://supabase.com/privacy" rel="noopener noreferrer">Supabase</a>, <a href="https://resend.com/legal/privacy-policy" rel="noopener noreferrer">Resend</a>, <a href="https://expo.dev/privacy" rel="noopener noreferrer">Expo</a>, <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement" rel="noopener noreferrer">GitHub</a>, and <a href="https://www.apple.com/legal/privacy/" rel="noopener noreferrer">Apple</a>.</p>
+          <p>These providers process information under their own terms and privacy notices. They may use infrastructure in countries other than yours. Provider notices: <a href="https://supabase.com/privacy" rel="noopener noreferrer">Supabase</a>, <a href="https://resend.com/legal/privacy-policy" rel="noopener noreferrer">Resend</a>, <a href="https://developers.openai.com/api/docs/guides/your-data" rel="noopener noreferrer">OpenAI</a>, <a href="https://expo.dev/privacy" rel="noopener noreferrer">Expo</a>, <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement" rel="noopener noreferrer">GitHub</a>, and <a href="https://www.apple.com/legal/privacy/" rel="noopener noreferrer">Apple</a>.</p>
 
           <h2>4. Public content and security</h2>
           <p>Think carefully before publishing personal information. Other users may copy or redistribute public content. Draft post media is private and is not served through permanent public links. Published post media is stored in a private bucket and served using signed, time-limited links. No internet service can guarantee absolute security, and a person who receives a signed link can use it until it expires.</p>
 
           <h2>5. Retention and deletion</h2>
-          <p>We keep information while needed to provide the Service, maintain an account and its content, address security issues, or meet legal obligations. You may delete eligible posts in the app. To request account and associated-data deletion, email <a href="mailto:bill-labs@outlook.com">bill-labs@outlook.com</a> from the account email address. We may ask you to verify ownership. We will delete or de-identify information we can reasonably identify and remove, subject to legal, security, dispute-resolution, and backup-retention needs. Copies already downloaded, screenshotted, or retained by other users or service-provider backups may not be immediately removable. At present, account deletion must be requested by email; it is not yet available as an in-app control.</p>
+          <p>We keep information while needed to provide the Service, maintain an account and its content, address security issues, or meet legal obligations. You may delete eligible posts in the app. You can request account deletion from the Delete Account control on the Personal Information page in the app, or contact <a href="mailto:bill-labs@outlook.com">bill-labs@outlook.com</a> from the account email address. Account deletion removes the account, drafts, published posts, and related media, subject to information we must retain for legal, security, dispute-resolution, or backup purposes. We may ask you to verify ownership. Copies already downloaded or screenshotted by other users, or retained in service-provider backups, may not be immediately removable.</p>
 
           <h2>6. Your choices and privacy rights</h2>
           <p>You can edit profile details, choose whether to publish content, remove eligible posts, and disable “Remember Password.” Depending on where you live, you may have rights to request access, correction, deletion, restriction, or a copy of your personal information, or to object to certain processing. Contact us below; we may verify your identity and will respond as required by applicable law.</p>
@@ -160,7 +168,7 @@
         </section>
 
         <section class="language-panel" id="zh-content" lang="zh-Hans">
-          <p class="effective"><strong>生效日期：</strong>2026 年 10 月 1 日</p>
+          <p class="effective"><strong>生效日期：</strong>2026 年 10 月 15 日</p>
           <p>本隐私政策说明 Quan Cheng（“我们”）在你使用 Idealist 移动应用及相关邮件链接页面和隐私政策页面（统称“服务”）时如何处理信息。目前提供 Idealist 并非出于商业或广告目的。</p>
 
           <h2>1. 我们处理的信息</h2>
@@ -178,6 +186,12 @@
           <h3>互动和游客使用</h3>
           <p>为提供相应功能，我们会处理收藏、点赞或其他互动、拾柴互动以及帖子浏览计数。未登录时，应用会在设备上生成一个随机且持久的访客标识，用来关联游客互动；它不是广告标识符。</p>
 
+          <h3>举报、屏蔽和内容审核</h3>
+          <p>当你举报帖子或作者时，我们会处理你选择的原因、被举报的帖子或账号标识，以及举报的审核状态，以便管理员调查处理。举报数量可能用于安排人工审核优先级；举报本身不会自动隐藏内容。你屏蔽作者后，我们会保存屏蔽关系，以便在你的信息流和收藏中屏蔽其内容。我们也会保存应用内展示的系统通知及其已读状态，例如警告、内容处理通知或发布限制通知。</p>
+
+          <h3>自动内容筛查</h3>
+          <p>原创或见闻帖子发布前，其标题、文字和所附图片会通过 OpenAI 的 Moderation API 进行安全筛查。OpenAI 会返回内容类别和分数。被标记需复核的内容会保持私有，在管理员批准前不会发布。我们会在受限的审核记录中保存筛查结果和类别信号。管理员添加的研究内容不属于此用户投稿筛查流程。</p>
+
           <h3>设备和应用本地数据</h3>
           <p>应用会在设备本地保存会话信息、语言偏好、最近登录使用的邮箱地址和访客标识。为减少图片闪烁，图片也可能缓存在本地。登录页目前提供“记住密码”选项，且默认选中。启用时，记住的凭据和会话信息会在可用时使用 iOS 安全存储；若安全存储不可用，应用会回退到应用私有目录中的文件。此回退方式不等同于 iOS 钥匙串保护。你可以关闭“记住密码”；在共享或不可信设备上应关闭此选项。</p>
           <p>应用不会请求精确位置或访问通讯录。当你选择照片或使用相机时，所选图片会用于你正在编辑的个人资料或帖子。</p>
@@ -189,6 +203,7 @@
           <ul>
             <li>创建并保护账号、验证邮箱、登录用户，以及发送用户主动请求的密码重置或账号邮件。</li>
             <li>保存草稿、发布内容、展示个人资料和信息流，并提供收藏、互动、拾柴和浏览计数功能。</li>
+            <li>对用户提交的原创和见闻内容进行安全筛查、为人工审核安排举报优先级，并执行警告、内容处理或发布限制。</li>
             <li>回复问题和建议、维护服务、调查滥用或安全问题并修复错误。</li>
             <li>遵守法律义务，保护用户和服务的权利、安全与稳定。</li>
           </ul>
@@ -199,17 +214,18 @@
           <ul>
             <li><strong>Supabase：</strong>提供身份验证、数据库、文件存储和服务端函数。</li>
             <li><strong>Resend：</strong>发送账号确认和密码重置等事务性邮件。它会收到收件人邮箱及发送所需的信息。</li>
+            <li><strong>OpenAI：</strong>通过 Moderation API 处理原创和见闻投稿的标题、文字和图片，以进行安全筛查。OpenAI 表示，除非客户主动选择加入，否则不会使用 API 数据训练或改进其模型；其滥用监测日志可能保留 API 输入、输出及相关元数据最长 30 天，但法律要求或为保护其服务及他人而合理必要的情况除外。详见 <a href="https://developers.openai.com/api/docs/guides/your-data" rel="noopener noreferrer">OpenAI API 数据控制说明</a>。</li>
             <li><strong>Expo / EAS：</strong>提供应用更新及相关技术服务。</li>
             <li><strong>GitHub Pages：</strong>托管隐私政策和邮件回调页面。打开邮件链接时，浏览器可能会向 GitHub Pages 和 Supabase 发送完成回调所需的链接参数。静态页面不用于广告或分析；GitHub 可能依据自身政策处理普通网页请求信息。</li>
             <li><strong>Apple：</strong>提供 iOS 操作系统和 App Store 分发服务，并可能依据 Apple 自身政策处理信息。</li>
           </ul>
-          <p>这些服务商根据各自条款和隐私声明处理信息，也可能在你所在国家/地区以外使用基础设施。服务商隐私声明：<a href="https://supabase.com/privacy" rel="noopener noreferrer">Supabase</a>、<a href="https://resend.com/legal/privacy-policy" rel="noopener noreferrer">Resend</a>、<a href="https://expo.dev/privacy" rel="noopener noreferrer">Expo</a>、<a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement" rel="noopener noreferrer">GitHub</a> 和 <a href="https://www.apple.com/legal/privacy/" rel="noopener noreferrer">Apple</a>。</p>
+          <p>这些服务商根据各自条款和隐私声明处理信息，也可能在你所在国家/地区以外使用基础设施。服务商隐私声明：<a href="https://supabase.com/privacy" rel="noopener noreferrer">Supabase</a>、<a href="https://resend.com/legal/privacy-policy" rel="noopener noreferrer">Resend</a>、<a href="https://developers.openai.com/api/docs/guides/your-data" rel="noopener noreferrer">OpenAI</a>、<a href="https://expo.dev/privacy" rel="noopener noreferrer">Expo</a>、<a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement" rel="noopener noreferrer">GitHub</a> 和 <a href="https://www.apple.com/legal/privacy/" rel="noopener noreferrer">Apple</a>。</p>
 
           <h2>4. 公开内容和安全</h2>
           <p>发布个人信息前请仔细考虑。其他用户可能复制或转发公开内容。草稿媒体为私有，不通过永久公开链接提供。已发布帖子图片存储在私有空间，并通过限时签名链接访问。任何互联网服务都无法保证绝对安全；获得签名链接的人可在链接过期前使用它。</p>
 
           <h2>5. 保存期限和删除</h2>
-          <p>我们会在提供服务、维护账号及其内容、处理安全问题或履行法律义务所需期间保存信息。你可以在应用内删除符合条件的帖子。若要申请删除账号及相关数据，请使用账号邮箱联系 <a href="mailto:bill-labs@outlook.com">bill-labs@outlook.com</a>。我们可能要求验证账号归属。除法律、安全、争议处理及备份保留需要外，我们会删除或去标识化可合理识别并删除的信息。其他用户已下载或截图的副本、以及服务商备份中的副本，可能无法立即删除。目前账号删除需通过邮件申请，应用内尚无删除账号入口。</p>
+          <p>我们会在提供服务、维护账号及其内容、处理安全问题或履行法律义务所需期间保存信息。你可以在应用内删除符合条件的帖子。你可以在应用“个人信息”页点击“删除账号”申请删除账号，也可以使用账号邮箱联系 <a href="mailto:bill-labs@outlook.com">bill-labs@outlook.com</a>。删除账号会删除账号、草稿、已发布帖子及相关媒体，但法律、安全、争议处理或备份保留所需的信息除外。我们可能要求验证账号归属。其他用户已下载或截图的副本、以及服务商备份中的副本，可能无法立即删除。</p>
 
           <h2>6. 你的选择和隐私权利</h2>
           <p>你可以编辑个人资料、决定是否发布内容、删除符合条件的帖子，并关闭“记住密码”。根据你所在地区的法律，你可能有权请求访问、更正、删除或限制处理个人信息、获取副本，或反对某些处理。请通过下方邮箱联系我们；我们可能会验证身份，并依适用法律回复。</p>
@@ -233,8 +249,8 @@
       </article>
     </main>
     <footer>
-      <span class="language-panel" id="en-footer">Idealist · Privacy Policy · Effective October 1, 2026</span>
-      <span class="language-panel" id="zh-footer">Idealist · 隐私政策 · 生效日期：2026 年 10 月 1 日</span>
+      <span class="language-panel" id="en-footer">Idealist · Privacy Policy · Effective October 15, 2026</span>
+      <span class="language-panel" id="zh-footer">Idealist · 隐私政策 · 生效日期：2026 年 10 月 15 日</span>
     </footer>
     <script>
       (() => {
